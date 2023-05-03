@@ -1,111 +1,313 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Xalaok Home">
-    <meta name="keywords" content="Xalaok,Homepage">
-    <meta name="author" content="Xalaok">
-    <title>Xalaok Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/onlinewebfonts.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/vno.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cursor.css">
-    <link rel="apple-touch-icon" href="assets\img\homeicon.png">
-    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png">
+    <title>Xalaok🐨 | HomePage</title>
+    <meta name="description" content="Xalaok Homepage">
+    <meta name="keywords" content="个人网站,博客,blog">
+    <link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nekotora.css">
+    <link rel="stylesheet" type="text/css" href="css/cursor.css">
 </head>
 
 <body>
-    <span class="mobile btn-mobile-menu">
-        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
-        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
-    </span>
-    <header id="panel" class="panel-cover">
-        <div class="panel-main">
-            <div class="panel-main__inner panel-inverted">
-                <div class="panel-main__content">
-                    <div class="ih-item circle effect right_to_left">            
-                        <a href="https://xalaok.top/" title="" class="blog-button">
-                            <div class="img"><img src="assets\img\avatar.png" alt="img" class="js-avatar iUp profilepic"></div>
-                            <div class="info iUp">
-                                <div class="info-back">
-                                    <h2> 
-                                        
-                                            Fighting
-                                        
-                                    </h2>
-                                    <p>
-                                        
-                                            2023 · 突破
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <h1 class="panel-cover__title panel-title iUp">
-                        <a href="https://xalaok.top/" title="Xalaok Home">Xalaok</a>
-                    </h1>
-                    <p class="panel-cover__subtitle panel-subtitle iUp">Impossible is nothing. Just do it.</p>
-                    <hr class="panel-cover__divider iUp" />
-                    <p id="description" class="panel-cover__description iUp">如何得与凉风约, 不共尘沙一并来!
-                        <br/>
-                        <strong>-「中牟道中」</strong>
-                    </p>
-                    <div class="navigation-wrapper iUp">
-                        <div>
-                            <nav class="cover-navigation cover-navigation--primary">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="https://xalaok.top/" class="blog-button">主页</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://blog.xalaok.top/" class="blog-button" target="_blank">博客</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://friends.xalaok.top/" class="blog-button" target="_blank">友链</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://blog.xalaok.top/post/about/" class="blog-button" target="_blank">关于</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="iUp">
-                            <nav class="cover-navigation navigation--social">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="https://github.com/Xalaok/" title="github" target="_blank">
-                                            <i class='social iconfont icon-github'></i>
-                                            <span class="label">github</span>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://www.zhihu.com/people/pmc-talk/" title="zhihu" target="_blank">
-                                            <i class='social iconfont icon-zhihu'></i>
-                                            <span class="label">zhihu</span>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="mailto:lichenjun08@126.com" title="email">
-                                            <i class='social iconfont icon-email'></i>
-                                            <span class="label">email</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+    <style>
+        .toast-bottom-center {
+            position: absolute;
+            left: 30px;
+            right: 10px;
+            top: 20px;
+        }
+    </style>
+
+    <div class="background">
+        <canvas id="startrack"></canvas>
+        <div class="cover"></div>
+    </div>
+    <div class="main">
+        <div class="ch intro">
+            <div class="container">
+                <div class="hello">
+                    <h1>Xalaok🐨<br>Impossible is nothing.<br>Welcome👏🏻</h1>
+                    <h2>
+                        <div class="circle"> <span></span> <span></span>
+                            <span></span>
+                        </div>14 | SH, China | Middle school student | JECASer
+                    </h2>
                 </div>
             </div>
-            <div class="panel-cover--overlay cover-slate"></div>
         </div>
-    </header>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/cursor.js"></script>
-    <script type="text/javascript" src="assets/json/images.json?cb=getBingImages"></script>
+        <div class="ch about">
+            <div class="container">
+                <h2 class="chtitle">Who is <span>Xalaok🐨</span>？</h2>
+                <div class="clear">
+                    <div class="introduct">
+                        <img class="avatar" src="images/lcj.png">
+                        <p>
+                            你好。<br>我是 Xalaok，<br>“Xalaok”是我广泛使用的网名，通过键入它，你可以在互联网上找到所有我的<a target="_blank" rel="noopener" href="https://blog.xalaok.top/post/about/" style="color: #ffaa00">踪迹</a>。<br>我会在<a target="_blank" rel="noopener" href="https://blog.xalaok.top/" style="color: #ffaa00">博客</a>上记录我感兴趣的内容。我喜欢邂逅<a target="_blank" rel="noopener" href="https://friends.xalaok.top/" style="color: #ffaa00">有趣的灵魂</a>，他们给了我很多新的思考，伴随着我的<a target="_blank" rel="noopener" href="https://blog.xalaok.top/post/about/" style="color: #ffaa00">成长</a>。
+                        </p>
+                        <p style="padding-top:1em;"><b>关于本人</b></p>
+                        <P>
+                            <ul>
+                                <li><b>昵称：</b>Xalaok🐨</li>
+                                <li><b>性别：</b>♂</li>
+                                <li><b>生日：</b>200X.XX.XX</li>
+                                <li><b>身份：</b>JECASer</li>
+                                <li><b>地点：</b>中国某著名国际化大都市🤣</li>
+                                <li><b>邮箱：</b><a href="mailto:lichenjun08@126.com" style="color: #ffaa00">lichenjun08@126.com</a> | <a href="mailto:2679779587@qq.com" style="color: #ffaa00">2679779587@qq.com</a></li>
+                                <li><b>擅长：</b>404 Not Found</li>
+                            </ul>
+                        </p>
+                        <p style="padding-top:1em;"><b>关于本站</b></p>
+                        <p>
+                            <ul>
+                                <li>源码仓库：<a target="_blank" rel="noopener" href="https://github.com/" style="color: #ffaa00">Github</a><br><a target="_blank" href="https://github.com/"  title="源码由Github提供存储仓库"><img src="https://shields.io/badge/Source-GitHub-blue?logo=github&style=flat" alt=""></a></li>
+                                <li>托管与部署：本网站采用多线部署（<a target="_blank" rel="noopener" href="https://vercel.com/" style="color: #ffaa00">Vercel</a> + <a target="_blank" rel="noopener" href="https://pages.github.com/" style="color: #ffaa00">GitHub Pages</a>）<br><a target="_blank" href="https://vercel.com/"  title="托管于Vercel"><img src="https://shields.io/badge/Hosted-Vercel-green?logo=vercel&style=flat" alt=""></a><a target="_blank" href="https://pages.github.com/"  title="托管于GitHub"><img src="https://shields.io/badge/Hosted-GitHub Pages-blue?logo=github&style=flat" alt=""></a></li>
+                            </ul>
+                        </p>
+                        <div class="chatbox">
+                            <div class="line loading"> <span></span>
+                                <span></span> <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="skill clear">
+                        <li>
+                            <p>HTML5</p>
+                            <div class="progress">
+                                <div style="width:80%;"></div>
+                                <span>制作网页的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>CSS3/JavaScript</p>
+                            <div class="progress">
+                                <div style="width:10%;"></div>
+                                <span>想要学</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>学习能力</p>
+                            <div class="progress">
+                                <div style="width:90%;"></div>
+                                <span>还不错</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>尝试新事物</p>
+                            <div class="progress">
+                                <div style="width:99%;"></div>
+                                <span>很强的</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>世界</p>
+                            <div class="progress">
+                                <div style="width:88%;">
+                                </div><span>观测世界的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>搞事情</p>
+                            <div class="progress">
+                                <div style="width:57%;"></div>
+                                <span>让事情发生程度的能力</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="find ch">
+            <div class="container links">
+                <h2 class="chtitle">Xalaok生活的<span>地方</span></h2>
+                <div class="clear col-3">
+                    <a href="https://blog.xalaok.top/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <span>博客</span> </div>
+                        </div>
+                    </a>
+                    <a href="https://friends.xalaok.top/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <span>友链</span> </div>
+                        </div>
+                    </a>
+                    <a href="https://sbdaily.xalaok.top/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <span>三班日报</span> </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear">
+                    <a onclick="alert('不告诉你我微信号')">
+                        <div class="item">
+                            <div class="bg" style="background-color:#07de00"></div>
+                            <div class="inner"> <i class="icon-wechat"></i> <span>WeChat</span> </div>
+                        </div>
+                    </a>
+                    <a onclick="alert('QQ号2679779587')">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <i class="icon-qq"></i> <span>QQ</span> </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Xalaok" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#353535"></div>
+                            <div class="inner"> <i class="icon-github"></i> <span>Github</span> </div>
+                        </div>
+                    </a>
+                    <a href="mailto:lichenjun08@126.com" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <i class="icon-mail"></i> <span>Mail</span> </div>
+                        </div>
+                    </a>
+                    <a href="https://space.bilibili.com/1668281348" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#f9a2a8"></div>
+                            <div class="inner"> <i class="icon-bilibili"></i>
+                                <span>Bilibili</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.zhihu.com/people/pmc-talk" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#0f88eb"></div>
+                            <div class="inner"> <i class="icon-zhihu"></i>
+                                <span>知乎</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Xalaok" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#28a9e0"></div>
+                            <div class="inner"> <i class="icon-telegram"></i> <span>Telegram</span> </div>
+                        </div>
+                    </a>
+                    <a href="mailto:lichenjun2008@gmail.com" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#ffaa00"></div>
+                            <div class="inner"> <i class="icon-google"></i> <span>GMail</span> </div>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/user/home?id=5172282219" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#f12d35"></div>
+                            <div class="inner"> <i class="icon-netease_music"></i>
+                                <span>网易云音乐</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.deviantart.com/lcj6666" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color:#2716e6"></div>
+                            <div class="inner"> <i class="icon-deviantart"></i> <span>DeviantArt</span> </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gate ch">
+            <div class="container links">
+                <h2 class="chtitle">朝夕的<span>邻居</span>们</h2>
+                <div class="clear">
+                    <a href="https://blog.xalaok.top/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/lcj.png"> </div>
+                            <div class="inner">
+                                <h5>Xalaok Blog🐨</h5>
+                                <p>Impossible is nothing. Just do it.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.luogu.com.cn/blog/August-Light/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/mxy.png"> </div>
+                            <div class="inner">
+                                <h5>August_Light</h5>
+                                <p>SH OIer</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.luogu.com.cn/blog/KnownError/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/wyl.png"> </div>
+                            <div class="inner">
+                                <h5>KnownError_</h5>
+                                <p>SH OIer</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.luogu.com.cn/blog/fy123333/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/fy.png"> </div>
+                            <div class="inner">
+                                <h5>fy123333</h5>
+                                <p>SH OIer</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.luogu.com.cn/blog/Shen-Talk/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/sc.png"> </div>
+                            <div class="inner">
+                                <h5>Shen_Talk</h5>
+                                <p>SH OIer</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.jdeal.cn/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/jdeal.jpg"> </div>
+                            <div class="inner">
+                                <h5>Jdeal</h5>
+                                <p>Life is like a Design.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.fomal.cc/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"> <img src="images/fomal.png"> </div>
+                            <div class="inner">
+                                <h5>Fomalhaut🥝</h5>
+                                <p>Future is now🍭🍭🍭</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="item akarin">
+                            <div class="avatar"> <img src="images/new.png"> </div>
+                            <div class="inner">
+                                <h5><span style="opacity:.3">想加友链的</span>你</h5>
+                                <p>To be continued……</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer ch">
+        <div class="container">
+            <h3>2023 © Xalaok</h3>
+            <p>Impossible is nothing. Just do it.</p>
+            <br>
+            <h4 class="c"><a target="_blank" href="https://vercel.com/"  title="托管于Vercel"><img src="https://shields.io/badge/Hosted-Vercel-green?logo=vercel&style=flat" alt=""></a><a target="_blank" href="https://github.com/"  title="源码由Github提供存储仓库"><img src="https://shields.io/badge/Source-GitHub-blue?logo=github&style=flat" alt=""></a><a target="_blank" href="https://pages.github.com/"  title="托管于GitHub"><img src="https://shields.io/badge/Hosted-GitHub Pages-blue?logo=github&style=flat" alt=""></a></h4>
+        </div>
+    </div>
+    <script src="js/page.js"></script>
+    <script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/cursor.js"></script>
+
 </body>
+
 </html>
